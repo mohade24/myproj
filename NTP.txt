@@ -1,0 +1,38 @@
+1-- ادي اي بي لكل الاجهزه ال عندك راوتر واتنين سويتش وسيرفرين ولاب
+
+2-- اعمل بينج من اللاب لكل الاجهزه ال عندك
+
+
+3--server > service > ntp(on)>authnetication ( key 1 pass cisco) 
+ 
+ 
+4--روح عل الراوتر واعمل التلت اوامر دول
+ntp server + ip(server)
+ntp authentication-key 1 md5 cisco
+ntp update-calendar
+ctrl+1 
+show clock
+ 
+5--هتكرر نفس الكلام عل السويتشين التانين 
+
+بس مفيش ntp update-calendar
+-----------------------------------------------------------------------------------
+sys log
+
+1 sever>>service>syslog(on)
+
+2 شغل ال سيرفيس بتاعت ال time stamp
+service timpstamps log datetime msec
+logging host +ip(server)
+3هتكرر نفس الكلام علي السويتشات 
+
+
+
+3
+
+
+
+4
+
+
+5
